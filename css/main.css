@@ -1,0 +1,36 @@
+body {
+  background: #3f3f3f;
+}
+
+#movies img,
+#movie img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+#movies img:hover {
+  transform: scale(0.9);
+}
+
+#movies .col-md-3 img {
+  margin-bottom: 1em;
+}
+
+#movies .col-md-3 h5 {
+  margin-bottom: 1em;
+}
+
+#movies .col-md-3 img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  #movies .col-md-3 .well {
+    height: 70vh;
+  }
+
+  #movies .col-md-3 img {
+    height: 370px;
+  }
+}
