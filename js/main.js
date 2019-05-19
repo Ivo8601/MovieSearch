@@ -1,4 +1,13 @@
-// js starts below
+// Main js starts below
+
+/*
+jQuery was used for main functionality;
+Axios js was used to fetch API for movie database;
+OMDB's API was used as a main info source.
+*/
+
+
+// Search fucntionality 
 
 $(document).ready(() => {
   $("#searchForm").on("submit", e => {
@@ -7,6 +16,8 @@ $(document).ready(() => {
     e.preventDefault();
   });
 });
+
+// Results output - Bootstrap grid used to display results
 
 function getMovies(searchText) {
   axios
@@ -41,6 +52,8 @@ function movieSelected(id) {
   window.location = "movie.html";
   return false;
 }
+
+// Movie details output below
 
 function getMovie() {
   let movieId = sessionStorage.getItem("movieId");
